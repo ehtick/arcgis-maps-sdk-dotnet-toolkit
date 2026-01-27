@@ -13,8 +13,8 @@
             </Grid.RowDefinitions>
 
             <StackLayout Margin="20" 
-             BindingContext="{Binding Symbol, Source={x:Reference symbolDisplay}}" 
-             x:DataType="sym:SimpleMarkerSymbol">
+                         BindingContext="{Binding Symbol, Source={x:Reference symbolDisplay}}" 
+                         x:DataType="sym:SimpleMarkerSymbol">
                 <Label Text="Size" />
                 <Slider Minimum="5" Maximum="100" Value="{Binding Size, Mode=TwoWay}" />
                 <Label Text="Style" />
