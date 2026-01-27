@@ -19,7 +19,7 @@
                 <Slider Minimum="5" Maximum="100" Value="{Binding Size, Mode=TwoWay}" />
                 <Label Text="Style" />
                 <Picker ItemsSource="{Binding SimpleMarkerSymbolStyles, Source={RelativeSource AncestorType={x:Type ContentPage}}}" 
-            SelectedItem="{Binding Style, Mode=TwoWay}"/>
+                        SelectedItem="{Binding Style, Mode=TwoWay}"/>
                 <Label Text="Angle" />
                 <Slider Minimum="0" Maximum="360" Value="{Binding Angle, Mode=TwoWay}" />
             </StackLayout>
