@@ -183,7 +183,12 @@ namespace Esri.ArcGISRuntime.Toolkit.Primitives
 
         private ChildElement CreateHyperlinkCell(Uri uri)
         {
+#if MAUI
+            // Don't use the SelectableLabel here since hyperlinks don't need to be selectable and it can cause issues with the tap gesture recognizer.
+            var t = new Microsoft.Maui.Controls.Label
+#else
             var t = new TextBlock
+#endif
             {
                 Style = FieldTextStyle,
 #if MAUI
